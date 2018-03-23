@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+@import url('https://fonts.googleapis.com/css?family=Arimo:700');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+/*First slide*/
+
+.picture {
+  background-image: url('../img/logotory1.png');
+  width: 100%;
+  height: 663px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.first{
+  width: 100%;
+  height: 663px;
+  background: black;
+}
+@-webkit-keyframes scroll-inner {
+	from {
+		margin-top: 15%;
+		opacity: 1
+	}
+	to {
+		margin-top: 75%;
+		opacity: 0
+	}
+}
+@keyframes scroll-inner {
+	from {
+		margin-top: 15%;
+		opacity: 1
+	}
+	to {
+		margin-top: 75%;
+		opacity: 0
+	}
+}
+div.mouse-container {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	display: block;
+	height: 50px;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%)
+}
+div.mouse {
+	position: relative;
+	display: block;
+	width: 20px;
+	height: 30px;
+	margin: 0 auto;
+	border: solid 1px #fff;
+	border-radius: 8px
+}
+div.mouse span.scroll-down {
+	display: block;
+	width: 4px;
+	height: 4px;
+	margin: 15% auto auto;
+	-webkit-animation: scroll-inner 1.5s;
+	animation: scroll-inner 1.5s;
+	-webkit-animation-timing-function: ease;
+	animation-timing-function: ease;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	border-radius: 50%;
+	background: #fff
+}
+
+/*Two slide*/
+.two {
+  width: 100%;
+  padding-bottom: 80px;
+
+}
+.twotxt1{
+  text-align: left;
+  position: relative;
+
+}
+
+/*Three slide*/
+.three {
+  width: 100%;
+  background: #000005;
+}
+
+.three > .image_back{
+  width: 100%;
+  height: 720px;
+  background-image: url('../img/telephone1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+.two_content {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 80%;
+  margin: 50px auto;
+
+}
+
+.two_content > img {
+  width: 400px;
+  height: 100%;
+  margin-top: 20px;
+}
+.two_content > div {
+    padding-left: 50px;
+}
+
+.two_content > div > h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #c6c6c6;
+}
+
+.two_block  ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.two_block  ul h2 {
+  border-bottom: 2px solid #ff4800;
+  padding-bottom: 8px;
+}
+
+.two_block > ul {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.two_block  ul li {
+  font-size: 16px;
+}
+
+.two_block  ul li {
+  min-width: 200px;
+}
+
+.foure{
+
+}
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	display: none;
+	pointer-events: none;
+}
+
+.modal_active {
+	display: block;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 450px;
+			height: 300px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+			border: 5px solid #ff4800;
+	background: #fff;
+}
+
+	.modalDialog > div > h2 {
+			text-transform: uppercase;
+			color: #535353;
+			font-size: 32px;
+			text-align: center;
+			margin-bottom: 40px;
+			margin-top: 25px;
+	}
+
+	.modalDialog > div > form {
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			flex-direction: column;
+	}
+
+	.modalDialog > div > form > input[type=email] {
+			background: none;
+			width: 230px;
+			border: 2px solid #ff4800;
+			border-radius: 10px;
+			padding: 4px 10px;
+			outline: none;
+			margin: 0 auto;
+	}
+
+	.modalDialog > div > form > input[type=email]::placeholder {
+			text-align: center;
+			font-style: italic;
+			color: #adadad;
+	}
+
+.modalDialog > div > form > label {
+		margin: 30px auto;
+		text-align: center;
+		font-size: 12px;
+		color: #adadad;
+}
+
+.modalDialog > div > form > input[type=submit] {
+		width: 200px;
+		height: 33px;
+		margin: 0 auto;
+		background: #ff4800;
+		color: #fff;
+		border: none;
+		border-radius: 15px;
+		text-transform: uppercase;
+		font-size: 24px;
+		font-weight: bold;
+}
+
+.modalDialog > div > form > input[type=submit]:hover {
+		cursor: pointer;
+}
+
+.close {
+	color: #222;
+	line-height: 25px;
+	position: absolute;
+	right: 3px;
+			text-align: center;
+			top: 2px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.close:hover {
+	background: #ff4800a8;
+			border-radius: 50%;
+}
+
+.foure {
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.foure a {
+  padding: 0;
+}
+
+			@media (max-width: 992px) {
+					.modalDialog > div {
+							margin: 22% auto;
+			 }
+			}
+			@media (max-width: 768px) {
+					.modalDialog > div {
+							width: 450px;
+							height: 300px;
+			 }
+			}
+
+
+  @media screen and (max-width: 1200px) {
+
+  }
+
+  @media screen and (max-width: 1024px) {
+    .two_content {
+      flex-direction: column;
+    }
+    .two_content img {
+      margin: 20px auto;
+    }
+    .two_content > div {
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    div.mouse-container {
+      display: none
+    }
+    .three > .image_back {
+      background-image: url('../img/telephone2.png');
+      background-size: 100%;
+      height: 300px
+    }
+    .two_block > ul {
+      flex-direction: column;
+    }
+    .two_block > ul > li {
+      width: 50%;
+      margin: 10px auto;
+    }
+    .two_block  ul h2 {
+      width: 50%;
+      margin: 10px auto;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .mouse-container {
+      display: none
+    }
+    .two_block  ul h2 {
+      width: 90%;
+      margin: 10px auto;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+
+
+  }
